@@ -39,7 +39,7 @@ let s:string; */
 /* if(typeof e === "string"){
   s = e;
 } */
-//any 和 unknown  any 给别人赋值也不会查类型 unknown 就会查类型是否想同
+
 //类型断言，可以用来告诉解析器变量的实际类型
 /* 
   语法：
