@@ -11,44 +11,44 @@ a = function(){
 b = {name:'孙悟空',age:18}; */
 
 //[propName:string]:any 表示任意类型的属性
-/* let c:{name:string,[propName:string]:any};
-c={name:'猪八戒',age:18,gender:'男'}; */
+let c:{name:string,[propName:string]:any};
+c={name:'猪八戒',age:18,gender:'男'}; 
 
 /* 
   设置函数结构的类型声明
     语法:(形参:类型,形参:类型,....)=>返回值
 */
 
-/* let d:(a:number,b:number)=>number; */
-// d = function (n1:number,n2:number):number{
-//   return n1 + n2;
-// }
+//  let d:(a:number,b:number)=>number;
+let dd = function (n1:number,n2:number):number{
+  return n1 + n2;
+}
 
-/* 
-  数组的类型声明
-    类型[]
-    Array<类型>
-*/
+
+  // 数组的类型声明
+  //   类型[]
+  //   Array<类型>
+
 //string[] 表示字符串数组
-/* let e: string[];
-e = ['a','b','c']; */
+let ee: string[];
+e = ['a','b','c'];
 
 // number[] 表示数值数组
-/* let f: number[];
-let g: Array<number>; */
+ let f: number[];
+let g: Array<number>;
 
 /* 
-  元组 元组就是固定长度的数组
+  元组 元组就是固定长度的数组 长度固定
     语法:[类型,类型,类型]
 */
-/* let h:[string,string,number];
-h = ['hello','abc',123]; */
+let h:[string,string,number];
+h = ['hello','abc',123];
 
 /* 
   enum 枚举
 
 */
-/* enum Gender{
+ enum Gender{  // 定义枚举
   Male,
   Female
 }
@@ -56,7 +56,7 @@ let i:{name:string,gender:Gender};
 i = {
   name:'孙悟空',
   gender:Gender.Male //'male'
-} */
+}
 //console.log(i.gender === Gender.Male);
 
 //&表示同时 且
