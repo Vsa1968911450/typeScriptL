@@ -16,30 +16,30 @@ c = "hello"; */
 //let d: any;
 
 //声明变量如果不指定类型，则TS解析器会自动判断类型为any(隐式any)
-/* let d;
+ let d;
 d = 10;
 d = 'hello';
-d = true; */
+d = true;
 
 //unkown 表示未知类型的值
-/* let e:unknown;
+let e:unknown;
 e = 10;
 e = 'hello';
 e = true;
 
-let s:string; */
+let s:string; 
 
 //d的类型式any,它可以赋值给任意变量
-//s = d;
+s = d;
 
 /* e = 'hello'; */
 
 //unknown 实际上就是类型安全的any
-//unknown类型的变量，不能直接赋值给其他变量
-/* if(typeof e === "string"){
+//unknown类型的变量，不能直接赋值给其他变量 
+if(typeof e === "string"){
   s = e;
-} */
-
+} 
+//any 和 unknown  any 给别人赋值也不会查类型 unknown 就会查类型是否想同 不能直接赋值 需进行类型检查
 //类型断言，可以用来告诉解析器变量的实际类型
 /* 
   语法：
@@ -47,8 +47,8 @@ let s:string; */
     <类型>变量
 
 */
-/* s = e as string;
-s = <string>e; */
+s = e as string;
+s = <string>e;
 
 //void 用来表示控，以函数为例，就表示没有返回值的函数
 /* function fn(): void{
