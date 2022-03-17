@@ -11,7 +11,7 @@ const gameControl = new GameControl();
 // setInterval(()=>{
 //     console.log(gameControl.direction);
 // }, 1000);
-console.log(jQuery('#main'))  // 直接用js库报错
+
 
 
 
